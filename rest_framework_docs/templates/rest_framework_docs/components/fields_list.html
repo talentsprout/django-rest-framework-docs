@@ -1,7 +1,7 @@
 <ul class="list fields">
   {% for field in fields %}
   <li class="field">
-    {{ field.name }}: {{ field.type }} 
+    {{ field.name }}: {% if field.help_text %}{{ field.help_text }}{% else %}{{ field.type }}{% endif %}
     {% if field.required %}
       <span class="label label-primary label-required" title="Required">R</span>
     {% endif %}
