@@ -42,13 +42,7 @@
                 {% for method in endpoint.allowed_methods %}
                   <li class="method {{ method|lower }}">{{ method }}</li>
                 {% endfor %}
-                  <li class="method plug"
-                    data-toggle="modal"
-                    data-path="{{ endpoint.path }}"
-                    data-methods="{{ endpoint.allowed_methods }}"
-                    data-permissions="{{ endpoint.permissions }}"
-                    data-fields="{{ endpoint.fields_json }}">
-                    <i class="fa fa-plug"></i></li>
+ 
               </ul>
             </div>
           </div>
