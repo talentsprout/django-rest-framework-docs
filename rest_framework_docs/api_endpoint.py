@@ -122,6 +122,7 @@ class ApiEndpoint(object):
                     "type": str(field.__class__.__name__),
                     "sub_fields": sub_fields,
                     "required": field.required,
+                    "help_text": getattr(field,'help_text'),
                     "to_many_relation": to_many_relation
                 })
             # FIXME:
